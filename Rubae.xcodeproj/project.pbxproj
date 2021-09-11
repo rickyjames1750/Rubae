@@ -27,9 +27,11 @@
 		6333B00126EC85BB0010C2F2 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333B00026EC85BB0010C2F2 /* SearchResultViewController.swift */; };
 		6333B00326EC85D80010C2F2 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333B00226EC85D80010C2F2 /* PostEditorViewController.swift */; };
 		6333B00526EC85ED0010C2F2 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333B00426EC85ED0010C2F2 /* PublishPostViewController.swift */; };
+		8897A3677F5DB53636993079 /* Pods_Rubae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C41B5DBD57A495F138AD52 /* Pods_Rubae.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30C41B5DBD57A495F138AD52 /* Pods_Rubae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rubae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6333AFCB26EC81C60010C2F2 /* Rubae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rubae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6333AFCE26EC81C60010C2F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6333AFD026EC81C60010C2F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,8 @@
 		6333B00026EC85BB0010C2F2 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		6333B00226EC85D80010C2F2 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		6333B00426EC85ED0010C2F2 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		B54C1BAF04C5318EA4E1BBF0 /* Pods-Rubae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rubae.debug.xcconfig"; path = "Target Support Files/Pods-Rubae/Pods-Rubae.debug.xcconfig"; sourceTree = "<group>"; };
+		DD18B5447D6AF720848930B0 /* Pods-Rubae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rubae.release.xcconfig"; path = "Target Support Files/Pods-Rubae/Pods-Rubae.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +63,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8897A3677F5DB53636993079 /* Pods_Rubae.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4369B6048B0F649C6701F7C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30C41B5DBD57A495F138AD52 /* Pods_Rubae.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6333AFC226EC81C60010C2F2 = {
 			isa = PBXGroup;
 			children = (
 				6333AFCD26EC81C60010C2F2 /* Rubae */,
 				6333AFCC26EC81C60010C2F2 /* Products */,
+				B80F66C5F0CE68051C04E26A /* Pods */,
+				4369B6048B0F649C6701F7C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +188,16 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		B80F66C5F0CE68051C04E26A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B54C1BAF04C5318EA4E1BBF0 /* Pods-Rubae.debug.xcconfig */,
+				DD18B5447D6AF720848930B0 /* Pods-Rubae.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6333AFDF26EC81C90010C2F2 /* Build configuration list for PBXNativeTarget "Rubae" */;
 			buildPhases = (
+				2D7FC32C0E7DAD51F6EA8F85 /* [CP] Check Pods Manifest.lock */,
 				6333AFC726EC81C60010C2F2 /* Sources */,
 				6333AFC826EC81C60010C2F2 /* Frameworks */,
 				6333AFC926EC81C60010C2F2 /* Resources */,
@@ -237,6 +263,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D7FC32C0E7DAD51F6EA8F85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rubae-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6333AFC726EC81C60010C2F2 /* Sources */ = {
@@ -403,6 +454,7 @@
 		};
 		6333AFE026EC81C90010C2F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B54C1BAF04C5318EA4E1BBF0 /* Pods-Rubae.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -422,6 +474,7 @@
 		};
 		6333AFE126EC81C90010C2F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD18B5447D6AF720848930B0 /* Pods-Rubae.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
