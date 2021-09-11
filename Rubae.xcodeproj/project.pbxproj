@@ -170,14 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				6333AFF126EC85030010C2F2 /* Onboarding */,
-				6333AFF626EC85510010C2F2 /* PostViewController.swift */,
-				6333AFF826EC856C0010C2F2 /* EditProfileViewController.swift */,
-				6333AFFA26EC85820010C2F2 /* SettingsViewController.swift */,
-				6333AFFC26EC858B0010C2F2 /* ListViewController.swift */,
-				6333AFFE26EC85AF0010C2F2 /* SearchViewController.swift */,
-				6333B00026EC85BB0010C2F2 /* SearchResultViewController.swift */,
-				6333B00226EC85D80010C2F2 /* PostEditorViewController.swift */,
-				6333B00426EC85ED0010C2F2 /* PublishPostViewController.swift */,
+				6333B00826ECAA8A0010C2F2 /* General */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -189,6 +182,21 @@
 				6333AFF426EC85300010C2F2 /* RegistrationViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6333B00826ECAA8A0010C2F2 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				6333AFF626EC85510010C2F2 /* PostViewController.swift */,
+				6333AFF826EC856C0010C2F2 /* EditProfileViewController.swift */,
+				6333AFFA26EC85820010C2F2 /* SettingsViewController.swift */,
+				6333AFFC26EC858B0010C2F2 /* ListViewController.swift */,
+				6333AFFE26EC85AF0010C2F2 /* SearchViewController.swift */,
+				6333B00026EC85BB0010C2F2 /* SearchResultViewController.swift */,
+				6333B00226EC85D80010C2F2 /* PostEditorViewController.swift */,
+				6333B00426EC85ED0010C2F2 /* PublishPostViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		B80F66C5F0CE68051C04E26A /* Pods */ = {
