@@ -14,5 +14,6 @@ pod 'Appirater'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Crashlytics'
+pod 'Firebase/Storage'
 
 end
