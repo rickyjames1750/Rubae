@@ -31,6 +31,7 @@
 		6333B00A26ECABB20010C2F2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333B00926ECABB20010C2F2 /* DatabaseManager.swift */; };
 		6333B00C26ECADC00010C2F2 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333B00B26ECADC00010C2F2 /* AuthManager.swift */; };
 		6333B00E26ECAE2B0010C2F2 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333B00D26ECAE2B0010C2F2 /* StorageManager.swift */; };
+		63E636FE26ED63C7000424C5 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E636FD26ED63C7000424C5 /* extensions.swift */; };
 		8897A3677F5DB53636993079 /* Pods_Rubae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C41B5DBD57A495F138AD52 /* Pods_Rubae.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		6333B00926ECABB20010C2F2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		6333B00B26ECADC00010C2F2 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		6333B00D26ECAE2B0010C2F2 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		63E636FD26ED63C7000424C5 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		B54C1BAF04C5318EA4E1BBF0 /* Pods-Rubae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rubae.debug.xcconfig"; path = "Target Support Files/Pods-Rubae/Pods-Rubae.debug.xcconfig"; sourceTree = "<group>"; };
 		DD18B5447D6AF720848930B0 /* Pods-Rubae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rubae.release.xcconfig"; path = "Target Support Files/Pods-Rubae/Pods-Rubae.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +152,7 @@
 				6333B00926ECABB20010C2F2 /* DatabaseManager.swift */,
 				6333B00B26ECADC00010C2F2 /* AuthManager.swift */,
 				6333B00D26ECAE2B0010C2F2 /* StorageManager.swift */,
+				63E636FD26ED63C7000424C5 /* extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				6333AFEE26EC84A00010C2F2 /* ProfileViewController.swift in Sources */,
 				6333B00C26ECADC00010C2F2 /* AuthManager.swift in Sources */,
 				6333AFCF26EC81C60010C2F2 /* AppDelegate.swift in Sources */,
+				63E636FE26ED63C7000424C5 /* extensions.swift in Sources */,
 				6333AFD126EC81C60010C2F2 /* SceneDelegate.swift in Sources */,
 				6333AFFD26EC858B0010C2F2 /* ListViewController.swift in Sources */,
 				6333AFFB26EC85820010C2F2 /* SettingsViewController.swift in Sources */,
