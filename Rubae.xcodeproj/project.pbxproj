@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,7 @@
 		6333B00126EC85BB0010C2F2 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333B00026EC85BB0010C2F2 /* SearchResultViewController.swift */; };
 		6333B00326EC85D80010C2F2 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333B00226EC85D80010C2F2 /* PostEditorViewController.swift */; };
 		6333B00526EC85ED0010C2F2 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333B00426EC85ED0010C2F2 /* PublishPostViewController.swift */; };
+		6333B00726ECA2C40010C2F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6333B00626ECA2C40010C2F2 /* GoogleService-Info.plist */; };
 		8897A3677F5DB53636993079 /* Pods_Rubae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C41B5DBD57A495F138AD52 /* Pods_Rubae.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		6333B00026EC85BB0010C2F2 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		6333B00226EC85D80010C2F2 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		6333B00426EC85ED0010C2F2 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		6333B00626ECA2C40010C2F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B54C1BAF04C5318EA4E1BBF0 /* Pods-Rubae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rubae.debug.xcconfig"; path = "Target Support Files/Pods-Rubae/Pods-Rubae.debug.xcconfig"; sourceTree = "<group>"; };
 		DD18B5447D6AF720848930B0 /* Pods-Rubae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rubae.release.xcconfig"; path = "Target Support Files/Pods-Rubae/Pods-Rubae.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 		6333AFE526EC82860010C2F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6333B00626ECA2C40010C2F2 /* GoogleService-Info.plist */,
 				6333AFCE26EC81C60010C2F2 /* AppDelegate.swift */,
 				6333AFD026EC81C60010C2F2 /* SceneDelegate.swift */,
 			);
@@ -194,7 +197,6 @@
 				B54C1BAF04C5318EA4E1BBF0 /* Pods-Rubae.debug.xcconfig */,
 				DD18B5447D6AF720848930B0 /* Pods-Rubae.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +211,7 @@
 				6333AFC726EC81C60010C2F2 /* Sources */,
 				6333AFC826EC81C60010C2F2 /* Frameworks */,
 				6333AFC926EC81C60010C2F2 /* Resources */,
+				AF4D3FAA262EA29AD4DC964D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6333AFDB26EC81C90010C2F2 /* LaunchScreen.storyboard in Resources */,
+				6333B00726ECA2C40010C2F2 /* GoogleService-Info.plist in Resources */,
 				6333AFD826EC81C90010C2F2 /* Assets.xcassets in Resources */,
 				6333AFD626EC81C60010C2F2 /* Main.storyboard in Resources */,
 			);
@@ -285,6 +289,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF4D3FAA262EA29AD4DC964D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rubae/Pods-Rubae-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rubae/Pods-Rubae-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rubae/Pods-Rubae-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
