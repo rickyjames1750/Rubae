@@ -23,20 +23,24 @@ class LoginViewController: UIViewController {
         field.layer.masksToBounds = true
         field.layer.cornerRadius = Constants.cornerRadius
         field.backgroundColor = .secondarySystemBackground
+        field.layer.borderWidth = 1.0
+        field.layer.borderColor = UIColor.secondaryLabel.cgColor
         return field
     }()
     
-    private let PasswordField: UITextField = {
+    private let passwordField: UITextField = {
         let field = UITextField()
         field.isSecureTextEntry = true
         field.placeholder = "Password..."
-        field.returnKeyType = .next
+        field.returnKeyType = .continue
         field.leftViewMode = .always
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         field.autocorrectionType = .no
         field.layer.masksToBounds = true
         field.layer.cornerRadius = Constants.cornerRadius
         field.backgroundColor = .secondarySystemBackground
+        field.layer.borderWidth = 1.0
+        field.layer.borderColor = UIColor.secondaryLabel.cgColor
         return field
     }()
     
@@ -52,11 +56,17 @@ class LoginViewController: UIViewController {
     }()
     
     private let termsButton: UIButton = {
-        return UIButton()
+        let button = UIButton()
+        button.setTitle("Terms of Service", for: .normal)
+        button.setTitleColor(.secondaryLabel, for: .normal)
+        return button
     }()
     
     private let privacyButton: UIButton = {
-        return UIButton()
+        let button = UIButton()
+        button.setTitle("Privacy Policy", for: .normal)
+        button.setTitleColor(.secondaryLabel, for: .normal)
+        return button
     }()
     
     private let createAccountButton: UIButton = {
@@ -76,7 +86,20 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginButton.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
+        
+        createAccountButton.addTarget(self, action: #selector(didTapCreateAccountButton), for: .touchUpInside)
+        
+        termsButton.addTarget(self, action: #selector(didTapTermsButton), for: .touchUpInside)
+        
+        privacyButton.addTarget(self, action: #selector(didTapPrivacyButton), for: .touchUpInside)
+        
+        usernameEmailField.delegate = self
+        passwordField.delegate = self
+        
         addSubViews()
+        
         view.backgroundColor = .systemBackground
     }
 
@@ -99,7 +122,7 @@ class LoginViewController: UIViewController {
             height: 52.0
         )
         
-        PasswordField.frame = CGRect(
+        passwordField.frame = CGRect(
             x: 25,
             y: usernameEmailField.bottom + 10,
             width: view.width-50,
@@ -108,17 +131,21 @@ class LoginViewController: UIViewController {
         
         loginButton.frame = CGRect(
             x: 25,
-            y: PasswordField.bottom + 10,
+            y: passwordField.bottom + 10,
             width: view.width-50,
             height: 52.0
         )
         
-        createAccountButton .frame = CGRect(
+        createAccountButton.frame = CGRect(
             x: 25,
             y: loginButton .bottom + 10,
             width: view.width-50,
             height: 52.0
         )
+        
+        termsButton.frame = CGRect(x: 10, y: view.height-view.safeAreaInsets.bottom - 100, width: view.width-20, height: 50)
+        
+        privacyButton.frame = CGRect(x: 10, y: view.height-view.safeAreaInsets.bottom - 50, width: view.width-20, height: 50)
         
         configureHeaderView()
     }
@@ -147,7 +174,7 @@ class LoginViewController: UIViewController {
     
     private func addSubViews() {
         view.addSubview(usernameEmailField)
-        view.addSubview(PasswordField)
+        view.addSubview(passwordField)
         view.addSubview(loginButton)
         view.addSubview(termsButton)
         view.addSubview(privacyButton)
@@ -162,4 +189,17 @@ class LoginViewController: UIViewController {
     @objc private func didTapPrivacyButton() {}
     
     @objc private func didTapCreateAccountButton() {}
+}
+
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == usernameEmailField {
+            passwordField.becomeFirstResponder()
+        }
+        else if textField == passwordField {
+            didTapLoginButton()
+        }
+        return true
+    }
 }
