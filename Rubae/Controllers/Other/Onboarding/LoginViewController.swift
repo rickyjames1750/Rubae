@@ -5,6 +5,7 @@
 //  Created by Ricky Sparks on 9/10/21.
 //
 
+import SafariServices
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -117,7 +118,7 @@ class LoginViewController: UIViewController {
         
         usernameEmailField.frame = CGRect(
             x: 25,
-            y: headerView.bottom + 10,
+            y: headerView.bottom + 40,
             width: view.width-50,
             height: 52.0
         )
@@ -182,13 +183,39 @@ class LoginViewController: UIViewController {
     }
     
     
-    @objc private func didTapLoginButton() {}
+    @objc private func didTapLoginButton() {
+        passwordField.resignFirstResponder()
+        usernameEmailField.resignFirstResponder()
+        
+        guard let usernameEmail = usernameEmailField.text, !usernameEmail.isEmpty,
+              let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
+            return
+        }
+        
+        // login functionality
+    }
     
-    @objc private func didTapTermsButton() {}
+    @objc private func didTapTermsButton() {
+        guard let url = URL(string: "https://www.ca.gov/use/") else {
+            return
+        }
+        let vc = SFSafariViewController(url: url)
+        present(vc, animated: true)
+    }
     
-    @objc private func didTapPrivacyButton() {}
     
-    @objc private func didTapCreateAccountButton() {}
+    @objc private func didTapPrivacyButton() {
+        guard let url = URL(string: "https://www.ca.gov/privacy-policy/") else {
+            return
+        }
+        let vc = SFSafariViewController(url: url)
+        present(vc, animated: true)
+    }
+    
+    @objc private func didTapCreateAccountButton() {
+        let vc = RegistrationViewController()
+        present(vc, animated: true)
+    }
 }
 
 
@@ -200,6 +227,7 @@ extension LoginViewController: UITextFieldDelegate {
         else if textField == passwordField {
             didTapLoginButton()
         }
+        
         return true
     }
 }
