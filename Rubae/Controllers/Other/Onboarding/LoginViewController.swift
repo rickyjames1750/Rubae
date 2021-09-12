@@ -92,6 +92,34 @@ class LoginViewController: UIViewController {
             height: view.height/3.0
         )
         
+        usernameEmailField.frame = CGRect(
+            x: 25,
+            y: headerView.bottom + 10,
+            width: view.width-50,
+            height: 52.0
+        )
+        
+        PasswordField.frame = CGRect(
+            x: 25,
+            y: usernameEmailField.bottom + 10,
+            width: view.width-50,
+            height: 52.0
+        )
+        
+        loginButton.frame = CGRect(
+            x: 25,
+            y: PasswordField.bottom + 10,
+            width: view.width-50,
+            height: 52.0
+        )
+        
+        createAccountButton .frame = CGRect(
+            x: 25,
+            y: loginButton .bottom + 10,
+            width: view.width-50,
+            height: 52.0
+        )
+        
         configureHeaderView()
     }
     
@@ -106,7 +134,14 @@ class LoginViewController: UIViewController {
         
         backgroundView.frame = headerView.bounds
         
-        // Add Instagram logo
+        // Add California logo
+        let imageView = UIImageView(image: UIImage(named: "text"))
+        headerView.addSubview(imageView)
+        imageView.contentMode = .scaleAspectFit
+        imageView.frame = CGRect(x: headerView.width/4.0,
+                                 y: view.safeAreaInsets.top,
+                                 width: headerView.width/2.0,
+                                 height: headerView.height - view.safeAreaInsets.top)
         
     }
     
