@@ -22,7 +22,8 @@ public class AuthManager {
             // email login
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                 guard authResult! = nil, error = nil else {
-                    
+                    completion(false)
+                    return
                 }
             }
         } else if let username = username {
