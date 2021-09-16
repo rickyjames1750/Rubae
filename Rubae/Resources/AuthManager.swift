@@ -25,6 +25,8 @@ public class AuthManager {
                     completion(false)
                     return
                 }
+                
+                completion(true)
             }
         } else if let username = username {
             // username login
