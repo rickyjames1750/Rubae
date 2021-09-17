@@ -36,6 +36,7 @@ class LoginViewController: UIViewController {
         field.returnKeyType = .continue
         field.leftViewMode = .always
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
+        field.autocapitalizationType = .none
         field.autocorrectionType = .no
         field.layer.masksToBounds = true
         field.layer.cornerRadius = Constants.cornerRadius
@@ -139,7 +140,7 @@ class LoginViewController: UIViewController {
         
         createAccountButton.frame = CGRect(
             x: 25,
-            y: loginButton .bottom + 10,
+            y: loginButton.bottom + 10,
             width: view.width-50,
             height: 52.0
         )
@@ -248,7 +249,6 @@ class LoginViewController: UIViewController {
     }
 }
 
-
 extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == usernameEmailField {
@@ -257,7 +257,6 @@ extension LoginViewController: UITextFieldDelegate {
         else if textField == passwordField {
             didTapLoginButton()
         }
-        
         return true
     }
 }
