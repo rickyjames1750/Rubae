@@ -72,7 +72,11 @@ class RegistrationViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        //
+        view.addSubview(usernameField)
+        view.addSubview(emailField)
+        view.addSubview(passwordField)
+        view.addSubview(registerButton)
+        // Add privacy and terms button here later on
         view.backgroundColor = .systemBackground
     }
 
