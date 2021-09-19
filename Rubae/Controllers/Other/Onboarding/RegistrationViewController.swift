@@ -72,6 +72,9 @@ class RegistrationViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerButton.addTarget(self, action: #selector(didTapRegister), for: .touchUpInside)
+        usernameField.delegate = self
+        passwordField.delegate = self
         view.addSubview(usernameField)
         view.addSubview(emailField)
         view.addSubview(passwordField)
@@ -88,6 +91,21 @@ class RegistrationViewController: UIViewController {
         passwordField.frame = CGRect(x: 20, y: emailField.bottom+10, width: view.width-40, height: 52)
         registerButton.frame = CGRect(x: 20, y: passwordField.bottom+10, width: view.width-40, height: 52)
     }
+    @objc private func didTapRegister() {
+        
+    }
 
+}
 
+extension RegistrationViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == usernameField {
+            emailField.becomeFirstResponder()
+        }
+        else {
+            didTapRegister()
+        }
+        
+        return true 
+    }
 }
