@@ -83,7 +83,7 @@ class RegistrationViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        usernameField.frame = CGRect(x: 20, y: view.safeAreaInsets.top+10, width: view.width-40, height: 52)
+        usernameField.frame = CGRect(x: 20, y: view.safeAreaInsets.top+100, width: view.width-40, height: 52)
         emailField.frame = CGRect(x: 20, y: usernameField.bottom+10, width: view.width-40, height: 52)
         passwordField.frame = CGRect(x: 20, y: emailField.bottom+10, width: view.width-40, height: 52)
         registerButton.frame = CGRect(x: 20, y: passwordField.bottom+10, width: view.width-40, height: 52)
