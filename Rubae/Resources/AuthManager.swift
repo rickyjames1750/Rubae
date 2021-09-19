@@ -27,13 +27,15 @@ public class AuthManager {
                  */
                 Auth.auth().createUser(withEmail: email, password: password) { result, error in
                     guard error == nil, result != nil else {
+                        // Firebase auth could not create account
+                        completion(false)
                         return
                     }
                     // Insert into database
                 }
             }
             else {
-                // either username or email
+                // either username or email does not exist
                 completion(false)
             }
         }
