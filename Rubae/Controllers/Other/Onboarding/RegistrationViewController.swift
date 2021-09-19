@@ -92,6 +92,16 @@ class RegistrationViewController: UIViewController {
         registerButton.frame = CGRect(x: 20, y: passwordField.bottom+10, width: view.width-40, height: 52)
     }
     @objc private func didTapRegister() {
+        emailField.resignFirstResponder()
+        usernameField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+        
+        
+        guard let email = emailField.text, !email.isEmpty,
+              let password = passwordField.text,!password.isEmpty, password.count >= 8,
+              let username = usernameField.text, !username.isEmpty else {
+            return
+        }
         
     }
 
@@ -106,6 +116,6 @@ extension RegistrationViewController: UITextFieldDelegate {
             didTapRegister()
         }
         
-        return true 
+        return true
     }
 }
