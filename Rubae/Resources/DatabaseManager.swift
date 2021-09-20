@@ -27,8 +27,8 @@ public class DatabaseManager {
     ///  -email: String representing email
     ///  username: String representing username
     public func insertNewUser(with email: String, username: String) {
-        database.child(email).setValue(["username": username], withCompletionBlock:{ error, _ in 
+        database.child(email).setValue(["username": username]){ error, _ in
             
-        })
+        }
     }
 }
