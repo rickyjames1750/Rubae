@@ -37,6 +37,7 @@ public class AuthManager {
                             completion(true)
                             return
                         } else {
+                            // failed to insert to database 
                             completion(false)
                             return
                         }
