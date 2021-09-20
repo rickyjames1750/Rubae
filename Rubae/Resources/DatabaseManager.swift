@@ -21,7 +21,7 @@ public class DatabaseManager {
         
     }
     
-    /// Check if username and email is available
+    /// Inserts new user data to database 
     /// -Parameters
     ///  -email: String representing email
     ///  username: String representing username
