@@ -30,7 +30,7 @@ public class DatabaseManager {
     public func insertNewUser(with email: String, username: String, completion: @escaping (Bool) -> Void) {
         database.child(email.safaDatabaseKey()).setValue(["username": username]){ error, _ in
             if error == nil {
-                // succeeded
+                // passed
                 completion(true)
                 return
             } else {
