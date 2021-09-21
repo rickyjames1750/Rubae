@@ -33,3 +33,11 @@ extension UIView {
         return frame.origin.x + frame.width
     }
 }
+
+
+extension String {
+    func safaDatabaseKey() -> String {
+        return self.replacingOccurrences(of: "@", with: "-")
+        return self.replacingOccurrences(of: ".", with: "-")
+    }
+}
