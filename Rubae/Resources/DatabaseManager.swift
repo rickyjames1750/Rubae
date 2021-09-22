@@ -29,7 +29,7 @@ public class DatabaseManager {
     ///  completion: Async callback for result if database entry succeeded
     public func insertNewUser(with email: String, username: String, completion: @escaping (Bool) -> Void) {
         let key = email.safaDatabaseKey()
-        print(key)
+        //print(key)
         
   
         database.child(key).setValue(["username": username]){ error, _ in
