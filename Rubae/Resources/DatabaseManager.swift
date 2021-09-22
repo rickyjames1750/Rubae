@@ -31,8 +31,8 @@ public class DatabaseManager {
         let key = email.safaDatabaseKey()
         print(key)
         
-        
-        database.child(email.safaDatabaseKey()).setValue(["username": username]){ error, _ in
+  
+        database.child(key).setValue(["username": username]){ error, _ in
             if error == nil {
                 // passed
                 completion(true)
