@@ -20,11 +20,12 @@ class HomeViewController: UIViewController {
         handleNotAuthenticated()
         
         
-        do {
+       /* do {
             try Auth.auth().signOut()
         } catch {
             print("Failed to sign out citizen")
-        }
+        } */
+
         
     }
     
