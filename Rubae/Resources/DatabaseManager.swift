@@ -31,7 +31,7 @@ public class DatabaseManager {
         let key = email.safaDatabaseKey()
         //print(key)
         
-  
+        // Left off RXc 
         database.child(key).setValue(["username": username]){ error, _ in
             if error == nil {
                 // passed
