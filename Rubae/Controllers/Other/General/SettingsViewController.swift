@@ -9,6 +9,9 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    private let tableView: UITableview = {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
