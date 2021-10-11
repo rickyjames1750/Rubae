@@ -10,7 +10,8 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     private let tableView: UITableview = {
-        
+        let tableView = UITableView()
+        return tableView
     }
     override func viewDidLoad() {
         super.viewDidLoad()
