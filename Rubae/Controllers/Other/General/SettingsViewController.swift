@@ -10,7 +10,7 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     private let tableView: UITableview = {
-        let tableView = UITableView()
+        let tableView = UITableView(frame: .zero, style: .grouped)
         return tableView
     }
     override func viewDidLoad() {
