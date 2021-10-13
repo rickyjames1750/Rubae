@@ -11,6 +11,7 @@ class SettingsViewController: UIViewController {
 
     private let tableView: UITableview = {
         let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.register(UITableView.self, forCellReuseIdentifier: "cell")
         return tableView
     }
     override func viewDidLoad() {
