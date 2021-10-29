@@ -16,6 +16,8 @@ class SettingsViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(tableView)
 
         // Do any additional setup after loading the view.
     }
