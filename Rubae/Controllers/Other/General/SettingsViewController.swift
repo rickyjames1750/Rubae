@@ -19,6 +19,6 @@ class SettingsViewController: UIViewController {
         view.backgroundColor = .systemBackground
         view.addSubview(tableView)
 
-        // Do any additional setup after loading the view.
+        
     }
 }
