@@ -23,6 +23,6 @@ class SettingsViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        <#code#>
+        super.viewDidLayoutSubviews()
     }
 }
