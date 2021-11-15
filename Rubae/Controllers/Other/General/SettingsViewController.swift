@@ -19,6 +19,7 @@ class SettingsViewController: UIViewController {
         view.backgroundColor = .systemBackground
         view.addSubview(tableView)
         tableView.delegate = self
+        tableView.dataSource = self
 
         
     }
