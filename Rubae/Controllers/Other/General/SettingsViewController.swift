@@ -31,4 +31,8 @@ class SettingsViewController: UIViewController {
     }
 }
 
-extension SettingsViewController: UITableViewDelegate, UITableView {}
+extension SettingsViewController: UITableViewDelegate, UITableView {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+}
