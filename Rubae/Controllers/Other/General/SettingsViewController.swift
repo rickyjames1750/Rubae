@@ -35,4 +35,7 @@ extension SettingsViewController: UITableViewDelegate, UITableView {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    func tableViewDidEndMultipleSelectionInteraction(_ tableView: UITableView, numberOfRowsInSection section: Int) -> int {
+        return 1
+    }
 }
