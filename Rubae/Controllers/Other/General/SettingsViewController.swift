@@ -39,6 +39,6 @@ extension SettingsViewController: UITableViewDelegate, UITableView {
         return 1
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        <#code#>
+        let cell tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
     }
 }
