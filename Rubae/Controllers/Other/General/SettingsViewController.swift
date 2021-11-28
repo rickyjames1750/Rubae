@@ -38,4 +38,7 @@ extension SettingsViewController: UITableViewDelegate, UITableView {
     func tableViewDidEndMultipleSelectionInteraction(_ tableView: UITableView, numberOfRowsInSection section: Int) -> int {
         return 1
     }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        <#code#>
+    }
 }
