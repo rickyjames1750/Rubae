@@ -44,4 +44,7 @@ extension SettingsViewController: UITableViewDelegate, UITableView {
         return
     }
     // more code here
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
