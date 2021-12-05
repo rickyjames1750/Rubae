@@ -40,12 +40,12 @@ extension SettingsViewController: UITableViewDelegate, UITableView {
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let cell tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = ""
+        // cell.textLabel?.text = ""
         return
     }
     // more code here
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: <#T##IndexPath#>, animated: true)
-        cell.textLabel?.text = ""
+        
     }
 }
