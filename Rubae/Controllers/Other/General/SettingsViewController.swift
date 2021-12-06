@@ -46,6 +46,6 @@ extension SettingsViewController: UITableViewDelegate, UITableView {
     // more code here
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: <#T##IndexPath#>, animated: true)
-        
+        // Handle cell selection
     }
 }
