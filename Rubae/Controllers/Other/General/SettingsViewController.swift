@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+final class SettingsViewController: UIViewController {
 
     private let tableView: UITableview = {
         let tableView = UITableView(frame: .zero, style: .grouped)
