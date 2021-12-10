@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// View Controller to show user settings
 final class SettingsViewController: UIViewController {
 
     private let tableView: UITableview = {
