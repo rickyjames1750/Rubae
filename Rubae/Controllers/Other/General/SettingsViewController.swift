@@ -20,14 +20,16 @@ final class SettingsViewController: UIViewController {
         tableView.register(UITableView.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
+    
+    private var data = [[SettingCellModel]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureModels()
         view.backgroundColor = .systemBackground
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -35,14 +37,27 @@ final class SettingsViewController: UIViewController {
         tableView.frame = view.bounds
         //
     }
+    
+    prvivate func configureModels(){
+        let section = [
+            SettingCellModel(title: "Log Out") { [weak self] in
+                self?.didTapLogOut()
+            }
+        ]
+        data.append(section)
+    }
+    
+    private func didTapLogOut(){
+        
+    }
 }
 
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return data.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return data[section].count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
