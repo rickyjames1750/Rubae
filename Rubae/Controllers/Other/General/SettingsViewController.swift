@@ -7,14 +7,19 @@
 
 import UIKit
 
+struct SettingCellModel {
+    let title: String
+    let handler: (()-> Void)
+}
+
 /// View Controller to show user settings
 final class SettingsViewController: UIViewController {
 
-    private let tableView: UITableview = {
+    private let tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(UITableView.self, forCellReuseIdentifier: "cell")
         return tableView
-    }
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -32,21 +37,24 @@ final class SettingsViewController: UIViewController {
     }
 }
 
-extension SettingsViewController: UITableViewDelegate, UITableView {
+extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    func tableViewDidEndMultipleSelectionInteraction(_ tableView: UITableView, numberOfRowsInSection section: Int) -> int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let cell tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         // cell.textLabel?.text = ""
-        return
+        return cell
     }
-    // more code here
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: <#T##IndexPath#>, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
         // Handle cell selection
     }
 }
+    
+    
+    
+    
