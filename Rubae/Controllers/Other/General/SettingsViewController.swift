@@ -49,10 +49,19 @@ final class SettingsViewController: UIViewController {
     
     private func didTapLogOut(){
         AuthManager.shared.logOut(completion: {success in
-            if success {
-                // present log in
-            } else {
-                // error occurred
+            DispatchQueue.main.async {
+                if success {
+                    // present log in
+                    let loginVC = LoginViewController()
+                    loginVC.modalPresentationStyle = .fullScreen
+                    self.present(loginVC, animated: true) {
+                    self.navigationController?.popToRootViewController(animated: false)
+                        self.tabBarController?.selectedIndex = 0
+                    }
+                }
+                else {
+                    // error occurred
+                }
             }
         })
         
