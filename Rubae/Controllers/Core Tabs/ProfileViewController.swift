@@ -5,9 +5,11 @@
 //  Created by Ricky Sparks on 9/10/21.
 //
 
+
 import UIKit
 
-class ProfileViewController: UIViewController {
+/// Profile view controller 
+final class ProfileViewController: UIViewController {
     
     
     private var collectionView: UICollectionView?
@@ -32,7 +34,8 @@ class ProfileViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        <#code#>
+        super.viewDidLayoutSubviews()
+        collectionView?.frame = view.bounds
     }
     
     private func configureNavigationBar() {
