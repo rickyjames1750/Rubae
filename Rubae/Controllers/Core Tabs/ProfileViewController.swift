@@ -30,6 +30,11 @@ class ProfileViewController: UIViewController {
         }
         view.addSubview(collectionView)
     }
+    
+    override func viewDidLayoutSubviews() {
+        <#code#>
+    }
+    
     private func configureNavigationBar() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gear"),style: .done, target: self, action: #selector(didTapSettingsButton))
     }
