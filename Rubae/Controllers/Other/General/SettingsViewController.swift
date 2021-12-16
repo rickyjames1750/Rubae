@@ -48,6 +48,10 @@ final class SettingsViewController: UIViewController {
     }
     
     private func didTapLogOut(){
+        let actionSheet = UIAlertController(title: "", message: "Are you sure you want to log out?", preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: <#T##String?#>, style: <#T##UIAlertAction.Style#>, handler: <#T##((UIAlertAction) -> Void)?##((UIAlertAction) -> Void)?##(UIAlertAction) -> Void#>))
+        
         AuthManager.shared.logOut(completion: {success in
             DispatchQueue.main.async {
                 if success {
