@@ -19,7 +19,7 @@ class ProfileViewController: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.sectionInset = UIEdgeInsets
+        layout.sectionInset = UIEdgeInsets()
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
     }
     private func configureNavigationBar() {
