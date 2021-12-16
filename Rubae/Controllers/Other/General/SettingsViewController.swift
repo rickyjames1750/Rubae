@@ -50,25 +50,35 @@ final class SettingsViewController: UIViewController {
     private func didTapLogOut(){
         let actionSheet = UIAlertController(title: "", message: "Are you sure you want to log out?", preferredStyle: .actionSheet)
         
-        actionSheet.addAction(UIAlertAction(title: <#T##String?#>, style: <#T##UIAlertAction.Style#>, handler: <#T##((UIAlertAction) -> Void)?##((UIAlertAction) -> Void)?##(UIAlertAction) -> Void#>))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
-        AuthManager.shared.logOut(completion: {success in
-            DispatchQueue.main.async {
-                if success {
-                    // present log in
-                    let loginVC = LoginViewController()
-                    loginVC.modalPresentationStyle = .fullScreen
-                    self.present(loginVC, animated: true) {
-                    self.navigationController?.popToRootViewController(animated: false)
-                        self.tabBarController?.selectedIndex = 0
+        actionSheet.addAction(UIAlertAction(title: "Log Out", style: .destructive, handler: { _ in
+            
+            
+            AuthManager.shared.logOut(completion: {success in
+                DispatchQueue.main.async {
+                    if success {
+                        // present log in
+                        let loginVC = LoginViewController()
+                        loginVC.modalPresentationStyle = .fullScreen
+                        self.present(loginVC, animated: true) {
+                        self.navigationController?.popToRootViewController(animated: false)
+                            self.tabBarController?.selectedIndex = 0
+                        }
+                    }
+                    else {
+                        // error occurred
+                        fatalError("")
                     }
                 }
-                else {
-                    // error occurred
-                }
-            }
-        })
+            })
+            
+        }))
         
+        actionSheet.popoverPresentationController?.sourceView = tableView
+        actionSheet.popoverPresentationController?.sourceRect = tableView.bounds
+        
+        present(actionSheet, animated: true)
     }
 }
 
