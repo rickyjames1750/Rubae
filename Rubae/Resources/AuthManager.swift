@@ -73,10 +73,12 @@ public class AuthManager {
         do {
             try Auth.auth().signOut()
             completion(true)
+            return
         }
         catch {
-            completion(false)
             print(error)
+            completion(false)
+            return
         }
     }
 }
