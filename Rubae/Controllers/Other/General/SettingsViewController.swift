@@ -68,7 +68,7 @@ final class SettingsViewController: UIViewController {
                     }
                     else {
                         // error occurred
-                        fatalError("")
+                        fatalError("Could not log out user")
                     }
                 }
             })
