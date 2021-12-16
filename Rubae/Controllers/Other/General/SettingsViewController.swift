@@ -48,6 +48,9 @@ final class SettingsViewController: UIViewController {
     }
     
     private func didTapLogOut(){
+        AuthManager.shared.logOut() {
+            
+        }
         
     }
 }
