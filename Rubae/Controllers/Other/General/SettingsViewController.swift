@@ -98,9 +98,6 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         let model = data[indexPath.section][indexPath.row].handler()
     }
-    
 }
-    
-    
-    
+
     
