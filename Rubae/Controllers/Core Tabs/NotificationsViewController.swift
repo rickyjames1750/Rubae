@@ -30,5 +30,9 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
     }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    // Left off
     
 }
