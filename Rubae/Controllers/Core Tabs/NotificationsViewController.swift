@@ -34,7 +34,8 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
         return 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        // left off
     }
     
 }
