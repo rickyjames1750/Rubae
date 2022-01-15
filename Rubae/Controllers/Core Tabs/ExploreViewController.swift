@@ -18,9 +18,7 @@ class ExploreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        navigationController?.navigationBar.topItem?.titleView = searchBar
     }
     
-
-
-
 }
