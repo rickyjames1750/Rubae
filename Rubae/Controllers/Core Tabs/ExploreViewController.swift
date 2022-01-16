@@ -15,6 +15,8 @@ class ExploreViewController: UIViewController {
         return searchBar
     }()
     
+    private var collectionView: UICollectionView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
