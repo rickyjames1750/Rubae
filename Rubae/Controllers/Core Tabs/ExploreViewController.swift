@@ -22,7 +22,8 @@ class ExploreViewController: UIViewController {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.topItem?.titleView = searchBar
         
-        // let layout 
+        let layout = UICollectionViewFlowLayout()
+        //
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
     }
     
