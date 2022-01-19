@@ -23,8 +23,10 @@ class ExploreViewController: UIViewController {
         navigationController?.navigationBar.topItem?.titleView = searchBar
         
         let layout = UICollectionViewFlowLayout()
-        //
+        layout.scrollDirection = .vertical
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        
+        //
     }
     
 }
