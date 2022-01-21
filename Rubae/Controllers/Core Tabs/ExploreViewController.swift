@@ -26,7 +26,7 @@ class ExploreViewController: UIViewController {
         layout.scrollDirection = .vertical
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         //
-        view.addSubview(collectionView)
+        //view.addSubview(collectionView)
     }
     
 }
