@@ -25,6 +25,8 @@ class ExploreViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView?.delegate = self
+        //
         guard let collectionView = collectionView else {
             return
         }
