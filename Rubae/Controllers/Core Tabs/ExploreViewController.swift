@@ -26,7 +26,7 @@ class ExploreViewController: UIViewController {
         layout.scrollDirection = .vertical
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView?.delegate = self
-        //
+        collectionView?.dataSource = self
         guard let collectionView = collectionView else {
             return
         }
