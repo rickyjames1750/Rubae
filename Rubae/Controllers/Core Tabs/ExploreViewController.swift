@@ -35,3 +35,7 @@ class ExploreViewController: UIViewController {
     }
     
 }
+
+extension ExploreViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewFlowLayout {
+    //
+}
