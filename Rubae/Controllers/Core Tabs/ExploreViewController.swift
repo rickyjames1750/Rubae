@@ -37,5 +37,7 @@ class ExploreViewController: UIViewController {
 }
 
 extension ExploreViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewFlowLayout {
-    //
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection: Int) -> Int {
+        <#code#>
+    }
 }
