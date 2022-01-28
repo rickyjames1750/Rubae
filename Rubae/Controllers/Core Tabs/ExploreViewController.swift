@@ -36,9 +36,11 @@ class ExploreViewController: UIViewController {
     
 }
 
-extension ExploreViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection: Int) -> Int {
+extension ExploreViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 0
     }
-    //
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
 }
