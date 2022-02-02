@@ -19,8 +19,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
+        tableView.delegate = self
         //
-        
         
     }
     override func viewDidAppear(_ animated: Bool) {
