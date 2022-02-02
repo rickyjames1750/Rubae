@@ -20,9 +20,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(tableView)
         tableView.delegate = self
-        //
-        
+        tableView.dataSource = self
     }
+    
+    //
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         handleNotAuthenticated()
