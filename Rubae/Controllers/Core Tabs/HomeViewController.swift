@@ -23,7 +23,9 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
     }
     
-    //
+    override func viewDidLayoutSubviews() {
+        <#code#>
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
