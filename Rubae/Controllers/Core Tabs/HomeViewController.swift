@@ -24,7 +24,8 @@ class HomeViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        <#code#>
+        super.viewDidLayoutSubviews()
+        //
     }
     
     override func viewDidAppear(_ animated: Bool) {
