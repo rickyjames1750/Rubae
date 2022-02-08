@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-        //
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -53,4 +53,8 @@ class HomeViewController: UIViewController {
         }
         
     }
+}
+//
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
 }
