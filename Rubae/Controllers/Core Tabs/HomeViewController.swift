@@ -56,5 +56,8 @@ class HomeViewController: UIViewController {
 }
 //
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
-    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 0
+    }
+    }
 }
