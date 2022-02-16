@@ -130,6 +130,7 @@
 		6333AFE326EC82790010C2F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				63493A6A27BAFDFB00CE8B4D /* Cells */,
 				6333AFE626EC82D40010C2F2 /* Storyboards */,
 				6333AFD726EC81C90010C2F2 /* Assets.xcassets */,
 			);
@@ -209,6 +210,13 @@
 				6333B00426EC85ED0010C2F2 /* PublishPostViewController.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		63493A6A27BAFDFB00CE8B4D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B80F66C5F0CE68051C04E26A /* Pods */ = {
