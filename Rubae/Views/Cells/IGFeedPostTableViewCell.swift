@@ -15,3 +15,4 @@ final class IGFeedPostTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 }
+//
