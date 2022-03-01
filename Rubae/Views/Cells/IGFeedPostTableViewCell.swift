@@ -19,6 +19,7 @@ final class IGFeedPostTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
         
         overrideUserInterfaceStyle {
+            super.inputAssistantItem
             
         }
     }
