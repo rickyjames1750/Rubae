@@ -68,5 +68,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
          
     }
+    public func configure() {
+        // configure 
+    }
 }
 
