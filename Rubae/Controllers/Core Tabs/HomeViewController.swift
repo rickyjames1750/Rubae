@@ -68,8 +68,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
          
     }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder: ) has not been implemented")
+    }
+    
     public func configure() {
-        // configure 
+        // configure the cell
     }
 }
 
