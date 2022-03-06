@@ -70,7 +70,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder: ) has not been implemented")
+        fatalError("init(coder: ) hasn't been implemented")
     }
     
     public func configure() {
