@@ -217,9 +217,17 @@
 		63493A6A27BAFDFB00CE8B4D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				63F0B59827D5BAEE00EB6512 /* Home Feed */,
 				63E8FE0227BDD0E70066ED87 /* IGFeedPostTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		63F0B59827D5BAEE00EB6512 /* Home Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Home Feed";
 			sourceTree = "<group>";
 		};
 		B80F66C5F0CE68051C04E26A /* Pods */ = {
