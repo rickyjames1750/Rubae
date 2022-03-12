@@ -220,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				63F0B59827D5BAEE00EB6512 /* Home Feed */,
-				63E8FE0227BDD0E70066ED87 /* IGFeedPostTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -228,6 +227,7 @@
 		63F0B59827D5BAEE00EB6512 /* Home Feed */ = {
 			isa = PBXGroup;
 			children = (
+				63E8FE0227BDD0E70066ED87 /* IGFeedPostTableViewCell.swift */,
 				635F898427D8927900FB4509 /* IGFeedPostHeaderTableViewCell.swift */,
 			);
 			path = "Home Feed";
