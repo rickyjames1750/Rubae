@@ -11,7 +11,10 @@ public class StorageManager {
     
     static let shared = StorageManager()
     
+    static let bucket = Storage.storage().reference()
+    
     // MARK: - Public
+    
     
     
 }
