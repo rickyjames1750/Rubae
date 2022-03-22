@@ -14,6 +14,9 @@ public class StorageManager {
     static let bucket = Storage.storage().reference()
     
     // MARK: - Public
+    public func downloadImage(with reference: String, completion: (Result<URL, Error>) -> Void) {
+        
+    }
     
     
     
