@@ -15,6 +15,7 @@ public class StorageManager {
     
     // MARK: - Public
     public func downloadImage(with reference: String, completion: (Result<URL, Error>) -> Void) {
+        static let shared = storageManager()
         
     }
     
