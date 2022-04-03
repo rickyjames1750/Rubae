@@ -14,11 +14,13 @@ public class StorageManager {
     static let bucket = Storage.storage().reference()
     
     // MARK: - Public
-    public func downloadImage(with reference: String, completion: (Result<URL, Error>) -> Void) {
-        static let shared = storageManager()
+    public func uploadUserPost(model: UserPost, completion: (Result<URL, Error>) -> Void) {
+        
         
     }
     
-    
-    
+}
+
+public Struct UserPost {
+    let postType: UserPostType
 }
