@@ -18,7 +18,7 @@ public class StorageManager {
         
         
     }
-    public func downloadImage {
+    public func downloadImage(with reference: String, completion: (Result<URL, Error>) -> Void) {
         
     }
     
