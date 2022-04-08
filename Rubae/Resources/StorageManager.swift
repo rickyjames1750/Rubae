@@ -19,7 +19,12 @@ public class StorageManager {
         
     }
     public func downloadImage(with reference: String, completion: (Result<URL, Error>) -> Void) {
-        
+        bucket.child(reference).downloadURL(completion: { url, error in guard let url = url, error == nil else {
+            completion(.failure(error))
+            return
+        }
+        completion(.success(url))
+        })
     }
     
 }
