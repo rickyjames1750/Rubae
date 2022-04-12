@@ -13,8 +13,13 @@ public class StorageManager {
     
     static let bucket = Storage.storage().reference()
     
+    enum IGStorageManagerError: Error {
+        case failedToDownload
+        
+    }
+    
     // MARK: - Public
-    public func uploadUserPost(model: UserPost, completion: (Result<URL, Error>) -> Void) {
+    public func uploadUserPost(model: UserPost, completion: (Result<URL, IGStorageManagerError>) -> Void) {
         
         
     }
