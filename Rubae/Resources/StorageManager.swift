@@ -13,7 +13,7 @@ public class StorageManager {
     
     static let bucket = Storage.storage().reference()
     
-    enum IGStorageManagerError: Error {
+    public enum IGStorageManagerError: Error {
         case failedToDownload
         
     }
