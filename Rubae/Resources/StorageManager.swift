@@ -19,7 +19,7 @@ public class StorageManager {
     }
     
     // MARK: - Public
-    public func uploadUserPost(model: UserPost, completion: (Result<URL, IGStorageManagerError>) -> Void) {
+    public func uploadUserPost(model: UserPost, completion: @escaping (Result<URL, IGStorageManagerError>) -> Void) {
         
         
     }
