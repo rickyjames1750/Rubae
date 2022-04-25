@@ -41,7 +41,7 @@ final class SettingsViewController: UIViewController {
     private func configureModels(){
         
         data.append([
-            SettingCellModel(title: "Log Out") { [weak self] in
+            SettingCellModel(title: "Edit Profile") { [weak self] in
                 self?.didTapLogOut()
             }
         ])
