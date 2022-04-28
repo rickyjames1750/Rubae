@@ -53,6 +53,12 @@ final class SettingsViewController: UIViewController {
         ])
         
         data.append([
+            SettingCellModel(title: "Privacy Policy") { [weak self] in
+               
+            }
+        ])
+        
+        data.append([
             SettingCellModel(title: "Log Out") { [weak self] in
                 self?.didTapLogOut()
             }
