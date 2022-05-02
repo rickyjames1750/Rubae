@@ -46,6 +46,9 @@ final class SettingsViewController: UIViewController {
             },
             SettingCellModel(title: "Invite Friends") { [weak self] in
                
+            },
+            SettingCellModel(title: "Save Original Posts") { [weak self] in
+               
             }
         ])
         
