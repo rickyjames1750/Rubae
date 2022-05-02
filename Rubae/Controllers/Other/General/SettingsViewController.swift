@@ -43,6 +43,9 @@ final class SettingsViewController: UIViewController {
         data.append([
             SettingCellModel(title: "Edit Profile") { [weak self] in
                
+            },
+            SettingCellModel(title: "Invite Friends") { [weak self] in
+               
             }
         ])
         
