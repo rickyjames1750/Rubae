@@ -77,6 +77,9 @@ final class SettingsViewController: UIViewController {
         ])
         
     }
+    private func didTapEditProfile() {
+        
+    }
     
     private func didTapLogOut(){
         let actionSheet = UIAlertController(title: "", message: "Are you sure you want to log out?", preferredStyle: .actionSheet)
