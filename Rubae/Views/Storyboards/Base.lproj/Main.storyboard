@@ -37,7 +37,6 @@
                 <navigationController id="e7i-T9-wr1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="k1s-e3-ccR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Fj-XV-vid">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -134,7 +133,6 @@
                 <navigationController id="4al-Xl-fje" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="vwq-DT-R7c"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s6i-wL-VAu">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -151,7 +149,6 @@
                 <navigationController id="iPq-ML-BRI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" id="af1-N4-7Ks"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rKb-SE-LXS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -168,7 +165,6 @@
                 <navigationController id="nnJ-qy-Ana" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="CQz-42-9gN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wWd-uQ-2oh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -185,7 +181,6 @@
                 <navigationController id="81y-td-dZA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="MMG-vx-Ruz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gl4-bv-FjS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
