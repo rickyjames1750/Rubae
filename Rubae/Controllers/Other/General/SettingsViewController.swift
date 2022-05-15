@@ -45,6 +45,7 @@ final class SettingsViewController: UIViewController {
                 self?.didTapEditProfile()
             },
             SettingCellModel(title: "Invite Friends") { [weak self] in
+                self?.didTapInviteFriends()
                
             },
             SettingCellModel(title: "Save Original Posts") { [weak self] in
