@@ -49,7 +49,7 @@ final class SettingsViewController: UIViewController {
                
             },
             SettingCellModel(title: "Save Original Posts") { [weak self] in
-               
+                self?.didTapSaveOriginalPosts() 
             }
         ])
         
