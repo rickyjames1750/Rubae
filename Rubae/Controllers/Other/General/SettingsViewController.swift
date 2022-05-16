@@ -78,6 +78,12 @@ final class SettingsViewController: UIViewController {
         ])
         
     }
+    
+    
+    private func didTapInviteFriends() {
+        
+    }
+    
     private func didTapEditProfile() {
         
     }
