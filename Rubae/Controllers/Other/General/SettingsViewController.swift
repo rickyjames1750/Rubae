@@ -79,6 +79,9 @@ final class SettingsViewController: UIViewController {
         
     }
     
+    private func didTapOriginalPosts() {
+        
+    }
     
     private func didTapInviteFriends() {
         
