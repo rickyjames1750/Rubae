@@ -79,6 +79,10 @@ final class SettingsViewController: UIViewController {
         
     }
     
+    private func openURL(type: SettingsURLType) {
+        
+    }
+    
     private func didTapOriginalPosts() {
         
     }
