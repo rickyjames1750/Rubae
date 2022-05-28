@@ -79,6 +79,10 @@ final class SettingsViewController: UIViewController {
         
     }
     
+    enum SettingsURLType {
+        case terms, privacy, help 
+    }
+    
     private func openURL(type: SettingsURLType) {
         
     }
