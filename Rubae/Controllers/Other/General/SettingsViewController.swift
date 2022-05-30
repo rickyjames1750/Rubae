@@ -61,7 +61,8 @@ final class SettingsViewController: UIViewController {
         
         data.append([
             SettingCellModel(title: "Privacy Policy") { [weak self] in
-               
+                self?.openURL(type: .privacy)
+            
             }
         ])
         
