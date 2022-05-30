@@ -68,7 +68,7 @@ final class SettingsViewController: UIViewController {
         
         data.append([
             SettingCellModel(title: "Help / Feedback") { [weak self] in
-               
+                self?.openURL(type: .help)
             }
         ])
         
