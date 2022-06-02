@@ -83,7 +83,7 @@ final class SettingsViewController: UIViewController {
     enum SettingsURLType {
         case terms, privacy, help 
     }
-    
+    let urlString: String 
     private func openURL(type: SettingsURLType) {
         switch type {
         case .terms:
