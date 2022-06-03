@@ -86,9 +86,9 @@ final class SettingsViewController: UIViewController {
     let urlString: String 
     private func openURL(type: SettingsURLType) {
         switch type {
-        case .terms:
-        case .privacy:
-        case .help
+        case .terms: urlString = ""
+        case .privacy: urlString = ""
+        case .help: urlString = ""
         }
         
     }
