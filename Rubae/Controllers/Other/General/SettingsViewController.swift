@@ -90,7 +90,9 @@ final class SettingsViewController: UIViewController {
         case .privacy: urlString = ""
         case .help: urlString = ""
         }
-        guard let url = URL(string: urlString = "")
+        guard let url = URL(string: urlString) else {
+            return
+        }
         
     }
     
