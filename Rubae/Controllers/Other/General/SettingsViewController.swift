@@ -94,6 +94,8 @@ final class SettingsViewController: UIViewController {
         guard let url = URL(string: urlString) else {
             return
         }
+        let vc = SFSafariViewController(url: url)
+        present(vc, animated: true)
         
     }
     
