@@ -5,6 +5,7 @@
 //  Created by Ricky Sparks on 9/10/21.
 //
 
+import SafariServices
 import UIKit
 
 struct SettingCellModel {
