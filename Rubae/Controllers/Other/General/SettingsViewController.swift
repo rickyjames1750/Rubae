@@ -50,7 +50,7 @@ final class SettingsViewController: UIViewController {
                
             },
             SettingCellModel(title: "Save Original Posts") { [weak self] in
-                self?.didTapSaveOriginalPosts() 
+                self?.didTapOriginalPosts()
             }
         ])
         
@@ -84,12 +84,13 @@ final class SettingsViewController: UIViewController {
     enum SettingsURLType {
         case terms, privacy, help 
     }
-    let urlString: String 
+    
     private func openURL(type: SettingsURLType) {
+        let urlString: String
         switch type {
-        case .terms: urlString = ""
-        case .privacy: urlString = ""
-        case .help: urlString = ""
+        case .terms: urlString = "https://www.visitcalifornia.com/privacy-policy/"
+        case .privacy: urlString = "https://www.visitcalifornia.com/privacy-policy/"
+        case .help: urlString = "https://www.visitcalifornia.com/sitemap/ß"
         }
         guard let url = URL(string: urlString) else {
             return
