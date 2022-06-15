@@ -105,10 +105,12 @@ final class SettingsViewController: UIViewController {
     }
     
     private func didTapInviteFriends() {
+        // Show Share sheet to invite friends
         
     }
     
     private func didTapEditProfile() {
+        let vc = EditProfileViewController()
         
     }
     
