@@ -13,6 +13,9 @@ class EditProfileViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "save", style: .done, target: self, action: #selector(didTapSave))
     }
+    @objc private func didTapSave(){
+        
+    }
     
 
     
