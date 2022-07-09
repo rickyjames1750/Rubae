@@ -21,6 +21,10 @@ class EditProfileViewController: UIViewController {
     @objc private func didTapCancel(){
         
     }
+    
+    @objc private func didTapChangeProfilePicture() {
+        
+    }
 
     
 
