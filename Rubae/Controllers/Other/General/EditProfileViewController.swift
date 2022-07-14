@@ -27,6 +27,10 @@ class EditProfileViewController: UIViewController {
         
         actionSheet.addAction(UIAlertAction(title: "Take Photo", style: .default, handler: _  in)))
         
+        actionSheet.addAction(UIAlertAction(title: "Take Photo", style: .default, handler: _  in)))
+        
+        actionSheet.addAction(UIAlertAction(title: "Take Photo", style: .default, handler: _  in)))
+        
     }
 
     
