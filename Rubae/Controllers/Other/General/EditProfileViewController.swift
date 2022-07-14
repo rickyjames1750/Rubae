@@ -25,6 +25,8 @@ class EditProfileViewController: UIViewController {
     @objc private func didTapChangeProfilePicture() {
         let actionSheet = UIAlertController(title: "Profile Picture", message: "Change profile picture", preferredStyle: .actionSheet)
         
+        actionSheet.addAction(UIAlertAction(title: "Take Photo", style: .default, handler: _  in)))
+        
     }
 
     
