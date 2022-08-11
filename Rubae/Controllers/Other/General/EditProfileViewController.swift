@@ -29,10 +29,13 @@ class EditProfileViewController: UIViewController {
         
         actionSheet.addAction(UIAlertAction(title: "Choose from Library", style: .default, handler: _  in)))
         
-        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: _  in)))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil)))
         
+        actionSheet.popoverPresentationController?.sourceView = view
+        
+        present(actionSheet, animated: true)
     }
 
-    
+     
 
 }
