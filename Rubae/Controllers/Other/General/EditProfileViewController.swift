@@ -32,6 +32,7 @@ class EditProfileViewController: UIViewController {
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil)))
         
         actionSheet.popoverPresentationController?.sourceView = view
+        actionSheet.popoverPresentationController?.sourceRect = view.bounds
         
         present(actionSheet, animated: true)
     }
