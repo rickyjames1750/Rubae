@@ -16,10 +16,10 @@ class EditProfileViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "save", style: .done, target: self, action: #selector(didTapCancel))
     }
     @objc private func didTapSave(){
-        
+        // Save info to the database
     }
     @objc private func didTapCancel(){
-        
+        dismiss(animated: true, completion: nil)
     }
     
     @objc private func didTapChangeProfilePicture() {
